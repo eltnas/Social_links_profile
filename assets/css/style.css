@@ -1,0 +1,124 @@
+:root{
+    --content_widht: 400px;
+    --content_height: 600px;
+    --photo_tam: 100px;
+    --btn_widht: 300px;
+    --btn_height: 50px;
+
+    /* page colors */
+    --page_Green: hsl(75, 94%, 57%);
+    --page_White: hsl(0, 0%, 100%);
+    --page_Grey: hsl(0, 0%, 20%);
+    --page_Dark_Grey: hsl(0, 0%, 12%);
+    --page_Off_Black: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --font_size: 14px;
+    --font_family: "Inter", sans-serif;
+}
+
+.mt01{
+    margin-top: 1rem;
+}
+
+.mt03{
+    margin-top: 3rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--page_Green);
+}
+.attribution a { color: var(--page_White); }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--page_Off_Black);
+    font-size: var(--font_size);
+    font-family: var(--font_family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+    height: 50%;
+    max-width: var(--content_widht);
+    max-height: var(--content_height);
+    min-width: 380px;
+    min-height: 580px;
+    background: var(--page_Dark_Grey);
+    border-radius: 10px;
+}
+
+.container .content{
+    width: var(--content_widht);
+}
+
+.container .content #box-img{
+    width: var(--content_widht);
+    height: var(--photo_tam);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content #box-img img{
+    width: var(--photo_tam);
+    height: var(--photo_tam);
+    border-radius: 50%;
+}
+
+.container .content #apress{
+    width: 100%;
+    height: auto;
+}
+
+.container .content #apress h3{
+    font-size: 2.3em;
+    color: var(--page_White);
+    text-align: center;
+}
+
+.container .content #apress #local{
+    font-size: 1.4em;
+    color: var(--page_Green);
+    text-align: center;
+    margin-top: -1.5rem;
+}
+
+.container .content #apress #sub{
+    font-size: 1.2em;
+    color: var(--page_White);
+    text-align: center;
+    margin-top: 1.3rem;
+}
+
+.container .content #box-btn{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .content #box-btn input{
+    margin: 5px auto;
+    width: var(--btn_widht);
+    height: var(--btn_height);
+    border-radius: 5px;
+    background-color: var(--page_Grey);
+    color: var(--page_White);
+    font-size: 1.2em;
+}
+
+.container .content #box-btn input:hover{
+    background-color: var(--page_Green);
+    color: var(--page_Off_Black);
+}
+
+/*# sourceMappingURL=style.css.map */
